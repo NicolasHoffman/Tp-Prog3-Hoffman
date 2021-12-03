@@ -127,6 +127,7 @@
     <Content Include="Error.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="frmAgregarIncidente.aspx" />
     <Content Include="frmEliminarCliente.aspx" />
     <Content Include="frmIncidentes.aspx" />
     <Content Include="frmLogin.aspx" />
@@ -204,6 +205,13 @@
     </Compile>
     <Compile Include="Error.aspx.designer.cs">
       <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgregarIncidente.aspx.cs">
+      <DependentUpon>frmAgregarIncidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmAgregarIncidente.aspx.designer.cs">
+      <DependentUpon>frmAgregarIncidente.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmEliminarCliente.aspx.cs">
       <DependentUpon>frmEliminarCliente.aspx</DependentUpon>

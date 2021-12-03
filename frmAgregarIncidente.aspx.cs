@@ -4,18 +4,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Negocio;
-using Dominio;
 
 namespace TPC_Caero_Hoffman
 {
-    public partial class frmIncidentes : System.Web.UI.Page
+    public partial class frmAgregarIncidente : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            IncidenteNegocio incidentenegocio = new IncidenteNegocio();
-            dgvIncidentes.DataSource = incidentenegocio.listar();
-            dgvIncidentes.DataBind();
+
         }
     }
 }
