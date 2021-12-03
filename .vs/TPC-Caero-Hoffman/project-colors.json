@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "bd4d689a-8399-4d74-a479-1b894f2e6517": {
+      "ProjectGuid": "bd4d689a-8399-4d74-a479-1b894f2e6517",
+      "DisplayName": "TPC-Caero-Hoffman",
+      "ColorIndex": 0
+    },
+    "5816e1cb-7eb3-4ac2-a6bc-75ff66e844b0": {
+      "ProjectGuid": "5816e1cb-7eb3-4ac2-a6bc-75ff66e844b0",
+      "DisplayName": "Negocio",
+      "ColorIndex": 1
+    },
+    "b6891792-fd0f-4ab3-872b-59fcb38ceb75": {
+      "ProjectGuid": "b6891792-fd0f-4ab3-872b-59fcb38ceb75",
+      "DisplayName": "Dominio",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

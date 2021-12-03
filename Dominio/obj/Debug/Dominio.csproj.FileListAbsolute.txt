@@ -1,0 +1,12 @@
+C:\Users\Pablo Ezequiel Caero\Desktop\TPC-Caero-Hoffman\Dominio\bin\Debug\Dominio.dll
+C:\Users\Pablo Ezequiel Caero\Desktop\TPC-Caero-Hoffman\Dominio\bin\Debug\Dominio.pdb
+C:\Users\Pablo Ezequiel Caero\Desktop\TPC-Caero-Hoffman\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Pablo Ezequiel Caero\Desktop\TPC-Caero-Hoffman\Dominio\obj\Debug\Dominio.dll
+C:\Users\Pablo Ezequiel Caero\Desktop\TPC-Caero-Hoffman\Dominio\obj\Debug\Dominio.pdb
+C:\Users\Pablo Ezequiel Caero\Desktop\TPC-Caero-Hoffman\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\nikoh\Desktop\tp programacion3- etapa de separacion\TPC-Caero-Hoffman-main\Dominio\bin\Debug\Dominio.dll
+C:\Users\nikoh\Desktop\tp programacion3- etapa de separacion\TPC-Caero-Hoffman-main\Dominio\bin\Debug\Dominio.pdb
+C:\Users\nikoh\Desktop\tp programacion3- etapa de separacion\TPC-Caero-Hoffman-main\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\nikoh\Desktop\tp programacion3- etapa de separacion\TPC-Caero-Hoffman-main\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\nikoh\Desktop\tp programacion3- etapa de separacion\TPC-Caero-Hoffman-main\Dominio\obj\Debug\Dominio.dll
+C:\Users\nikoh\Desktop\tp programacion3- etapa de separacion\TPC-Caero-Hoffman-main\Dominio\obj\Debug\Dominio.pdb
