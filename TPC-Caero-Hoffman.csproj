@@ -129,6 +129,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="frmAgregarIncidente.aspx" />
     <Content Include="frmEliminarCliente.aspx" />
+    <Content Include="frmEliminarEmpleado.aspx" />
     <Content Include="frmIncidentes.aspx" />
     <Content Include="frmLogin.aspx" />
     <Content Include="frmMenuAdministrador.aspx" />
@@ -219,6 +220,13 @@
     </Compile>
     <Compile Include="frmEliminarCliente.aspx.designer.cs">
       <DependentUpon>frmEliminarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmEliminarEmpleado.aspx.cs">
+      <DependentUpon>frmEliminarEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmEliminarEmpleado.aspx.designer.cs">
+      <DependentUpon>frmEliminarEmpleado.aspx</DependentUpon>
     </Compile>
     <Compile Include="frmIncidentes.aspx.cs">
       <DependentUpon>frmIncidentes.aspx</DependentUpon>

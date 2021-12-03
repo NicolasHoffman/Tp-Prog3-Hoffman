@@ -118,7 +118,6 @@ namespace Negocio
                 datos.cerrarConexion();
             }
         }
-
         public void modificarPassword(Empleado nuevo)
         {
             AccesoDatos datos = new AccesoDatos();
@@ -139,26 +138,6 @@ namespace Negocio
             }
         }
 
-        public void eliminar(Empleado nuevo)
-        {
-            AccesoDatos datos = new AccesoDatos();
-            try
-            {
-                datos.setearConsulta("Delete From Empleados Where ID = " + nuevo.Legajo + "");
-                datos.ejecutarAccion();
-
-            }
-            catch (Exception ex)
-            {
-                throw ex;
-            }
-            finally
-            {
-                datos.cerrarConexion();
-            }
-        }
-
-       
         public List<Empleado> buscarLegajo(Empleado buscar)
         {
             List<Empleado> lista = new List<Empleado>();
@@ -166,7 +145,7 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("Select ID, DNI, NOMBRE, APELLIDO Where NOMBRE= '" + buscar.Legajo + "'");
+                datos.setearConsulta("Select E.ID, E.DNI, E.NOMBRE, E.APELLIDO, E.IDCARGO, C.NOMBRECARGO, E.EMAIL, E.TELEFONO From Empleados E INNER JOIN Cargos C ON C.ID = E.IDCARGO Where E.ID = '" + buscar.Legajo + "'");
                 datos.ejecturaLectura();
 
                 while (datos.Lector.Read())
@@ -176,7 +155,12 @@ namespace Negocio
                     aux.Dni = (string)datos.Lector["DNI"];
                     aux.Nombre = (string)datos.Lector["NOMBRE"];
                     aux.Apellido = (string)datos.Lector["APELLIDO"];
-
+                    aux.Telefono = (string)datos.Lector["TELEFONO"];
+                    aux.Email = (string)datos.Lector["EMAIL"];
+                    aux.Cargo = new Cargo();
+                    aux.Cargo.IDCargo = (int)datos.Lector["IDCARGO"];
+                    aux.Cargo.Nombre_Cargo = (string)datos.Lector["NOMBRECARGO"];
+                    lista.Add(aux);
                 }
 
                 return lista;
@@ -215,6 +199,25 @@ namespace Negocio
             {
                 throw ex;
 
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void eliminar(Empleado nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
+            try
+            {
+                datos.setearConsulta("Delete From Empleados Where ID = " + nuevo.Legajo + "");
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
             finally
             {

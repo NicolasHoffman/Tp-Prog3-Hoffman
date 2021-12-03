@@ -38,5 +38,13 @@ namespace TPC_Caero_Hoffman
         {
             Response.Redirect("EmpleadoForm.aspx");
         }
+
+
+
+
+        protected void btnEliminarEmpleado_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("frmEliminarEmpleado.aspx");
+        }
     }
 }

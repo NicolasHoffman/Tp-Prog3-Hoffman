@@ -17,6 +17,6 @@
     <h1>Empleados</h1>
     <asp:Button Text="Registrar Empleado" ID="btnRegistrarEmpleado" CssClass="btn btn-dark" runat="server" OnClick="btnRegistrarEmpleado_Click" />
     <asp:Button Text="Modificar Empleado" ID="Button1" CssClass="btn btn-dark" runat="server" />
-    <asp:Button Text="Eliminar Empleado" ID="btnModificarEmpleado" CssClass="btn btn-dark" runat="server" />
+    <asp:Button Text="Eliminar Empleado" ID="btnModificarEmpleado" CssClass="btn btn-dark" runat="server" OnClick="btnEliminarEmpleado_Click" />
     </div>
 </asp:Content>
