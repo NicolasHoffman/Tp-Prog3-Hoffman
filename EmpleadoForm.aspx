@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EmpleadoForm.aspx.cs" Inherits="TPC_Caero_Hoffman.EmpleadoForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
- <div>
+<div>
     <h2>Registrar Empleado</h2>
     </div>
     <div class="row">
@@ -33,8 +32,9 @@
     <label for="inputEmail4" class="form-label">Email</label>
     <asp:TextBox type="text" runat="server" class="form-control" id="txtEmail"/>
   </div>
+
          <div class="col-md-6">
-         <label for="inputAddress" class="form-label">Cargo</label>
+         <label for="inputEmail4" class="form-label">Cargo</label>
          <asp:DropDownList runat="server" ID="ddlCargos" CssClass="btn btn-outline-dark dropdown-toggle" AutoPostBack="true" >
          </asp:DropDownList>
              </div>
@@ -48,8 +48,8 @@
     <asp:TextBox type="text" runat="server" class="form-control" id="txtFechaNacimiento" placeholder="DD/MM/AAAA"/>
   </div>
   <div class="col-md-6">
-    <label for="inputAddress" class="form-label">Dirección</label>
-    <asp:TextBox type="text" runat="server" class="form-control" id="txtDireccion"/>
+    <label for="inputAddress" class="form-label">Calle</label>
+    <asp:TextBox type="text" runat="server" class="form-control" id="txtCalle"/>
   </div>
         <div class="col-md-2">
     <label for="inputAddress" class="form-label">Altura</label>
@@ -68,8 +68,8 @@
     <asp:TextBox type="text" runat="server" class="form-control" id="txtCodigoPostal"/>
   </div>
   <div class="col-12">
-      <asp:Button Text="Cargar Empleado" runat="server" ID="btnCargarEmpleado" />
+      <asp:Button Text="Cargar Empleado" runat="server" ID="btnCargarEmpleado" OnClick="btnCargarEmpleado_Click" />
   </div>
-        </div>
+  </div>
 
 </asp:Content>
