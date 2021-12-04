@@ -98,14 +98,13 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                datos.setearConsulta("Update Empleados set NOMBRE = @NOMBRE, APELLIDO = @APELLIDO, DNI = @DNI,  EMAIL = @EMAIL, TELEFONO = @TELEFONO, FECHANACIMIENTO = @FECHANACIMIENTO, IDCARGO = @IDCARGO Where ID = " + nuevo.Legajo + "");
+                datos.setearConsulta("Update Empleados set NOMBRE = @NOMBRE, APELLIDO = @APELLIDO, DNI = @DNI,  EMAIL = @EMAIL, TELEFONO = @TELEFONO Where ID = " + nuevo.Legajo + "");
                 datos.setearParametros("@NOMBRE", nuevo.Nombre);
                 datos.setearParametros("@APELLIDO", nuevo.Apellido);
-                datos.setearParametros("@IDCARGO", nuevo.Cargo.IDCargo);
                 datos.setearParametros("@DNI", nuevo.Dni);
                 datos.setearParametros("@EMAIL", nuevo.Email);
                 datos.setearParametros("@TELEFONO", nuevo.Telefono);
-                datos.setearParametros("@FECHANACIMIENTO", nuevo.Fecha_Nac);
+
 
                 datos.ejecutarAccion();
             }

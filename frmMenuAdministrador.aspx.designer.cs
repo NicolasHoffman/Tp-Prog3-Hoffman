@@ -60,15 +60,6 @@ namespace TPC_Caero_Hoffman
         protected global::System.Web.UI.WebControls.Button btnRegistrarEmpleado;
 
         /// <summary>
-        /// Control Button1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
-
-        /// <summary>
         /// Control btnModificarEmpleado.
         /// </summary>
         /// <remarks>
@@ -76,5 +67,14 @@ namespace TPC_Caero_Hoffman
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnModificarEmpleado;
+
+        /// <summary>
+        /// Control btnEliminarEmpleado.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnEliminarEmpleado;
     }
 }

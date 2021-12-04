@@ -33,11 +33,17 @@ namespace TPC_Caero_Hoffman
         {
             Response.Redirect("frmIncidentes.aspx");
         }
-
+        protected void btnModificarEmpleado_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("frmModificarEmpleado.aspx");
+        }
         protected void btnRegistrarEmpleado_Click(object sender, EventArgs e)
         {
             Response.Redirect("EmpleadoForm.aspx");
         }
+
+
+
 
 
 
