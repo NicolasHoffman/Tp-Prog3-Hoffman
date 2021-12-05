@@ -1,6 +1,16 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ClienteForm.aspx.cs" Inherits="TPC_Caero_Hoffman.ClienteForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+    <style >
+        .row{
+            margin-left: 10px ;
+            margin-right: 10px ;
+        }
+        .col-md-67{
+            margin-top:10px;
+        }
+    </style>
+
      <div>
     <h2>Cargar Cliente</h2>
     </div>
@@ -51,7 +61,9 @@
     <asp:TextBox type="text" runat="server" class="form-control" id="txtProvincia"/>
   </div>
   
-  <div class="col-md-6">
+        
+
+  <div class="col-md-67">
       <asp:Button ID="btnCargarCliente" runat="server" OnClick="btnCargarCliente_Click" Text="Cargar Cliente" />
   </div>
 </div>

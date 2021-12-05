@@ -1,7 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="frmEliminarEmpleado.aspx.cs" Inherits="TPC_Caero_Hoffman.frmEliminarEmpleado" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-
+    <style >
+        .col-9{
+            margin-left: 10px;
+        }
+    </style>
     
     <div>
     <h4>Eliminar Empleado</h4>

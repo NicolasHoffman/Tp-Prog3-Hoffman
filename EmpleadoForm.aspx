@@ -1,5 +1,17 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="EmpleadoForm.aspx.cs" Inherits="TPC_Caero_Hoffman.EmpleadoForm" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+
+    <style >
+        .row{
+            margin-left: 10px ;
+            margin-right: 10px ;
+        }
+        .col-12{
+            margin-top:10px;
+        }
+    </style>
+
+
 <div>
     <h2>Registrar Empleado</h2>
     </div>

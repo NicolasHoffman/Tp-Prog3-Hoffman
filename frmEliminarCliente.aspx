@@ -1,6 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="frmEliminarCliente.aspx.cs" Inherits="TPC_Caero_Hoffman.frmEliminarCliente" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-     <div>
+     
+    <style >
+        .col-9{
+            margin-left: 10px;
+        }
+    </style>
+   
+    <div>
     <h3>Eliminar Cliente</h3>
     </div>
     <div>

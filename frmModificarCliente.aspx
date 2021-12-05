@@ -1,6 +1,14 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="frmModificarCliente.aspx.cs" Inherits="TPC_Caero_Hoffman.frmModificarCliente" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+     <style >
+        .col-9{
+            margin-left: 10px;
+        }
+    </style>
+
+
+
     <div>
     <h2>Modificar Cliente</h2>
     </div>
