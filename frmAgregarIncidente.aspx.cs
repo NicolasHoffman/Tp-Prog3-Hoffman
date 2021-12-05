@@ -119,7 +119,23 @@ namespace TPC_Caero_Hoffman
 
                 nuevo.Detalles = txtDetalles.Text;
                 negocioIncidente.agregar(nuevo);
+
+
+                EmailService emailService = new EmailService();
+
+                emailService.correo(txtDetalles.Text);
+
+                try
+                {
+                    emailService.enviarEmail();
+                }
+                catch (Exception ex)
+                {
+                    Session.Add("error", ex);
+                }
+
             }
+
             catch (Exception ex)
             {
                 Session.Add("error", ex);

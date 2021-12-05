@@ -45,6 +45,7 @@
     <Compile Include="CargoNegocio.cs" />
     <Compile Include="ClienteNegocio.cs" />
     <Compile Include="DireccionNegocio.cs" />
+    <Compile Include="EmailService.cs" />
     <Compile Include="EmpleadoNegocio.cs" />
     <Compile Include="EspecialidadNegocio.cs" />
     <Compile Include="EstadoNegocio.cs" />
