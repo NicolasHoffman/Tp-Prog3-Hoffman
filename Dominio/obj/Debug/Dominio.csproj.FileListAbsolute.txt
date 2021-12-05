@@ -10,3 +10,9 @@ C:\Users\nikoh\Desktop\tp programacion3- etapa de separacion\TPC-Caero-Hoffman-m
 C:\Users\nikoh\Desktop\tp programacion3- etapa de separacion\TPC-Caero-Hoffman-main\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\nikoh\Desktop\tp programacion3- etapa de separacion\TPC-Caero-Hoffman-main\Dominio\obj\Debug\Dominio.dll
 C:\Users\nikoh\Desktop\tp programacion3- etapa de separacion\TPC-Caero-Hoffman-main\Dominio\obj\Debug\Dominio.pdb
+C:\Users\nikoh\Desktop\Tp-Prog3-Hoffman\Dominio\bin\Debug\Dominio.dll
+C:\Users\nikoh\Desktop\Tp-Prog3-Hoffman\Dominio\bin\Debug\Dominio.pdb
+C:\Users\nikoh\Desktop\Tp-Prog3-Hoffman\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\nikoh\Desktop\Tp-Prog3-Hoffman\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\nikoh\Desktop\Tp-Prog3-Hoffman\Dominio\obj\Debug\Dominio.dll
+C:\Users\nikoh\Desktop\Tp-Prog3-Hoffman\Dominio\obj\Debug\Dominio.pdb

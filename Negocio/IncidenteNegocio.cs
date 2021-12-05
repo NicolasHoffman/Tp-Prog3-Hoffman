@@ -17,13 +17,13 @@ namespace Negocio
 
             try
             {
-                datos.setearConsulta("SELECT I.ID, I.FECHA_INICIO, I.FECHA_CIERRE, I.IDEMPLEADO, EM.NOMBRE AS NOMEMPLEADO, EM.APELLIDO AS APEEMPLEADO, I.IDCLIENTE, CS.NOMBRE AS NOMCLIENTE, CS.APELLIDO AS APECLIENTE, I.DETALLES, I.IDESTADO, E.NOMBREESTADO, I.COMENTARIOFINAL FROM INCIDENTES I, ESTADOS E, CLIENTES CS, EMPLEADOS EM WHERE E.ID = I.IDESTADO AND I.IDCLIENTE = CS.ID AND I.IDEMPLEADO = EM.ID");
+                datos.setearConsulta("SELECT I.ID, I.FECHA_INICIO, I.FECHA_CIERRE, I.IDEMPLEADO, EM.NOMBRE AS NOMEMPLEADO, EM.APELLIDO AS APEEMPLEADO, I.IDCLIENTE, CS.NOMBRE AS NOMCLIENTE, CS.APELLIDO AS APECLIENTE, I.DETALLES, I.IDPRIORIDAD, P.PRIORIDAD, I.IDESPECIALIDAD, SP.ESPECIALIDAD, I.IDESTADO, E.NOMBREESTADO, I.COMENTARIOFINAL FROM INCIDENTES I, ESTADOS E, CLIENTES CS, EMPLEADOS EM, Prioridades P, Especialidades SP WHERE E.ID = I.IDESTADO AND I.IDCLIENTE = CS.ID AND I.IDEMPLEADO = EM.ID AND I.IDESPECIALIDAD = SP.ID AND I.IDPRIORIDAD = P.ID");
                 datos.ejecturaLectura();
 
                 while (datos.Lector.Read())
                 {
                     Incidente aux = new Incidente();
-         
+
                     aux.ID = (int)datos.Lector["ID"];
                     aux.Fecha_inicio = (DateTime)datos.Lector["FECHA_INICIO"];
                     if (!(datos.Lector.IsDBNull(datos.Lector.GetOrdinal("FECHA_CIERRE"))))
@@ -34,12 +34,20 @@ namespace Negocio
                     aux.Empleado.Nombre = (string)datos.Lector["NOMEMPLEADO"];
                     aux.Empleado.Apellido = (string)datos.Lector["APEEMPLEADO"];
 
+                    aux.Especialidad = new Especialidad();
+                    aux.Especialidad.IDEspecialidad = (int)datos.Lector["IDESPECIALIDAD"];
+                    aux.Especialidad.Nom_Especialidad = (string)datos.Lector["ESPECIALIDAD"];
+
+                    aux.Prioridad = new Prioridad();
+                    aux.Prioridad.IDPrioridad = (int)datos.Lector["IDPRIORIDAD"];
+                    aux.Prioridad.Nom_Prioridad = (string)datos.Lector["PRIORIDAD"];
+
                     aux.Cliente = new Cliente();
                     aux.Cliente.IDCliente = (int)datos.Lector["IDCLIENTE"];
                     aux.Cliente.Nombre = (string)datos.Lector["NOMCLIENTE"];
                     aux.Cliente.Apellido = (string)datos.Lector["APECLIENTE"];
 
-                    if(!(datos.Lector.IsDBNull(datos.Lector.GetOrdinal("DETALLES"))))
+                    if (!(datos.Lector.IsDBNull(datos.Lector.GetOrdinal("DETALLES"))))
                         aux.Detalles = (string)datos.Lector["DETALLES"];
 
                     aux.Estado = new Estado();
@@ -63,6 +71,7 @@ namespace Negocio
             {
                 datos.cerrarConexion();
             }
+
         }
 
         public void agregar(Incidente nuevo)
@@ -71,12 +80,14 @@ namespace Negocio
 
             try
             {
-                //PARAMETROS "ABIERTO"
-                datos.setearConsulta("Insert Into Incidentes(IDEMPLEADO, IDCLIENTE, FECHA_INICIO, DETALLES, IDESTADO) Values(@IDEMPLEADO, @IDCLIENTE, getDate(), @DETALLES, 1)"); 
+                
+                datos.setearConsulta("Insert Into Incidentes(IDEMPLEADO, IDCLIENTE, FECHA_INICIO, DETALLES, IDESTADO, IDPRIORIDAD, IDESPECIALIDAD) Values(@IDEMPLEADO, @IDCLIENTE, getDate(), @DETALLES, 1, @IDPRIORIDAD, @IDESPECIALIDAD)");
                 datos.setearParametros("@IDEMPLEADO", nuevo.Empleado.Legajo);
                 datos.setearParametros("@IDCLIENTE", nuevo.Cliente.IDCliente);
                 datos.setearParametros("@DETALLES", nuevo.Detalles);
-               
+                datos.setearParametros("@IDESPECIALIDAD", nuevo.Especialidad.IDEspecialidad);
+                datos.setearParametros("@IDPRIORIDAD", nuevo.Prioridad.IDPrioridad);
+
                 datos.ejecutarAccion();
 
             }

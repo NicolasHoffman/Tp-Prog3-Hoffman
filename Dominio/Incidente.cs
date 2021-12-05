@@ -17,5 +17,8 @@ namespace Dominio
         public Estado Estado { get; set; }
         public string ComentarioFinal { get; set; }
 
+        public Especialidad Especialidad { get; set; }
+        public Prioridad Prioridad { get; set; }
+
     }
 }
