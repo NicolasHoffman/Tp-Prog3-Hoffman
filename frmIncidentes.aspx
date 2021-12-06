@@ -40,7 +40,19 @@
                   
                      <asp:TemplateField ShowHeader="False">
                                 <ItemTemplate>
-                                <asp:LinkButton ID="btnModificar" runat="server" CommandName="Modificar" >Modificar   </asp:LinkButton>            
+                                <asp:LinkButton ID="btnResolver" runat="server" CommandName="Resolver" >Resolver   </asp:LinkButton>            
+                                </ItemTemplate>
+                    </asp:TemplateField>
+
+                    <asp:TemplateField ShowHeader="False">
+                                <ItemTemplate>
+                                <asp:LinkButton ID="btnReasignar" runat="server" CommandName="Reasignar" >Resignar  </asp:LinkButton>            
+                                </ItemTemplate>
+                    </asp:TemplateField>
+
+                    <asp:TemplateField ShowHeader="False">
+                                <ItemTemplate>
+                                <asp:LinkButton ID="btnCerrarIncidente" runat="server" CommandName="CerrarIncidente" >Cerrar  </asp:LinkButton>            
                                 </ItemTemplate>
                     </asp:TemplateField>
 
