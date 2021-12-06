@@ -14,7 +14,7 @@ namespace TPC_Caero_Hoffman
         private List<Cliente> buscaCliente;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+           
         }
 
         protected void btnBuscarClientexDNI_Click(object sender, EventArgs e)

@@ -29,6 +29,7 @@ namespace TPC_Caero_Hoffman
                 if (negocio.Loguear(empleado) == 1)
                 {
                     Session.Add("NombreUsuario", empleado);
+                    Session.Add("IDCargo", 1);
                     Response.Redirect("frmMenuAdministrador.aspx", false);
                 }
                 else
@@ -36,7 +37,7 @@ namespace TPC_Caero_Hoffman
                     if (negocio.Loguear(empleado) == 2)
                     {
                         Session.Add("NombreUsuario", empleado);
-
+                        Session.Add("IDCargo", 2);
                         Response.Redirect("frmMenuSupervisor.aspx", false);
                     }
                     else
@@ -44,6 +45,7 @@ namespace TPC_Caero_Hoffman
                         if (negocio.Loguear(empleado) == 3)
                         {
                             Session.Add("NombreUsuario", empleado);
+                            Session.Add("IDCargo", 3);
                             Response.Redirect("frmMenuTelefonista.aspx", false);
                         }
                         else
