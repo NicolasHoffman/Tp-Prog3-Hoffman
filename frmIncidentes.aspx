@@ -6,8 +6,18 @@
     </div>
         <hr />
 
-        
-                  <asp:GridView ID="dgvIncidentes" CssClass="table table-success table-striped" runat="server" AutoGenerateColumns="False" >
+    <div>
+    <h3>Buscar Incidente por ID </h3>
+    </div>
+    
+     <div class="col-9">
+        <asp:TextBox type="text" runat="server"  class="form-control" id="txtBuscarIncidentexID" />
+        <asp:Button ID="btnBuscarIncidentexID" runat="server" OnClick="btnBuscarIncidentexID_Click" Text="Buscar" /> 
+        </div>
+
+                  <asp:GridView ID="dgvIncidentes" CssClass="table table-success table-striped" runat="server" AutoGenerateColumns="False" 
+                      OnRowDataBound="dgvIncidentes_RowDataBound">
+
                 <Columns>
                    
                   <asp:BoundField DataField="ID" HeaderText="N° de Incidente"/>  
