@@ -38,12 +38,6 @@
                                 </ItemTemplate>
                     </asp:TemplateField>
                   
-                     <asp:TemplateField ShowHeader="False">
-                                <ItemTemplate>
-                                <asp:LinkButton ID="btnResolver" runat="server" CommandName="Resolver" >Resolver   </asp:LinkButton>            
-                                </ItemTemplate>
-                    </asp:TemplateField>
-
                     <asp:TemplateField ShowHeader="False">
                                 <ItemTemplate>
                                 <asp:LinkButton ID="btnReasignar" runat="server" CommandName="Reasignar" >Resignar  </asp:LinkButton>            
@@ -63,7 +57,7 @@
             
         
   <a href="/frmAgregarIncidente.aspx">Agregar</a>
-
+    <a href="/frmResolverIncidente.aspx">Resolver</a>
 
 
 

@@ -137,6 +137,7 @@
     <Content Include="frmMenuTelefonista.aspx" />
     <Content Include="frmModificarCliente.aspx" />
     <Content Include="frmModificarEmpleado.aspx" />
+    <Content Include="frmResolverIncidente.aspx" />
     <Content Include="GestionCargos.aspx" />
     <Content Include="GestionClientes.aspx" />
     <Content Include="GestionDirecciones.aspx" />
@@ -277,6 +278,13 @@
     </Compile>
     <Compile Include="frmModificarEmpleado.aspx.designer.cs">
       <DependentUpon>frmModificarEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="frmResolverIncidente.aspx.cs">
+      <DependentUpon>frmResolverIncidente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frmResolverIncidente.aspx.designer.cs">
+      <DependentUpon>frmResolverIncidente.aspx</DependentUpon>
     </Compile>
     <Compile Include="GestionCargos.aspx.cs">
       <DependentUpon>GestionCargos.aspx</DependentUpon>

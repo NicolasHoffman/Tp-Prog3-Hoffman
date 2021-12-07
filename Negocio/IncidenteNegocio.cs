@@ -173,8 +173,8 @@ namespace Negocio
             AccesoDatos datos = new AccesoDatos();
             try
             {
-                //PARAMETROS "RESUELTO"
-                datos.setearConsulta("Update Incidentes set COMENTARIOFINAL=@COMETARIOFINAL, FECHA_CIERRE = GETDATE(), IDESTADO = 6 Where ID = " + nuevo.ID + "");
+
+                datos.setearConsulta("Update Incidentes set COMENTARIOFINAL=@COMENTARIOFINAL, FECHA_CIERRE = GETDATE(), IDESTADO = 6 Where ID = " + nuevo.ID + "");
                 datos.setearParametros("@COMENTARIOFINAL", nuevo.Detalles);
 
                 datos.ejecutarAccion();
