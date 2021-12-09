@@ -23,11 +23,11 @@ namespace Negocio
             server.Host = "smtp.gmail.com";
         }
 
-        public void correo(string cuerpo)
+        public void correo(string cuerpo, string clim)
         {
             email = new MailMessage();
             email.From = new MailAddress("noresponder@callcenter.com");
-            email.To.Add("2019.syso@gmail.com");
+            email.To.Add(clim);
             email.IsBodyHtml = true;
             email.Body = cuerpo;
 

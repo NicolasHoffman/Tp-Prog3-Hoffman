@@ -22,6 +22,7 @@
                     <asp:BoundField DataField="Cargo.Nombre_Cargo" HeaderText="Cargo" />    
                     <asp:BoundField DataField="Nombre" HeaderText="Nombre"/>
                     <asp:BoundField DataField="Apellido" HeaderText="Apellido"/>
+                    <asp:BoundField DataField="Email" HeaderText="Email"/>
 
                     <asp:CommandField ButtonType="Link" ShowSelectButton="true"  />
                 </Columns>
@@ -54,6 +55,7 @@
                     <asp:BoundField DataField="DNI" HeaderText="DNI"/>
                     <asp:BoundField DataField="Nombre" HeaderText="Nombre"/>
                     <asp:BoundField DataField="Apellido" HeaderText="Apellido"/>
+                    <asp:BoundField DataField="Email" HeaderText="Email"/>
                     <asp:CommandField ButtonType="Link" ShowSelectButton="true"  ShowEditButton="false" ShowDeleteButton="false" />
                 </Columns>
 
@@ -61,6 +63,7 @@
 
             
             <asp:Label ID="lblIDCliente" runat="server" Visible="false" />
+            <asp:Label ID="lblEmail" runat="server" Visible="false" />
             <asp:Label ID="lblSeleccionCliente" Font-Bold="true" runat="server" />
 
         </div>

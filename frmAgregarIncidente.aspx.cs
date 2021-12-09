@@ -87,6 +87,7 @@ namespace TPC_Caero_Hoffman
         {
             GridViewRow row = dgvClientes.Rows[e.NewSelectedIndex];
             lblIDCliente.Text = row.Cells[0].Text;
+            lblEmail.Text = row.Cells[4].Text;
 
         }
 
@@ -107,6 +108,7 @@ namespace TPC_Caero_Hoffman
 
                 nuevo.Cliente = new Cliente();
                 nuevo.Cliente.IDCliente = int.Parse(lblIDCliente.Text);
+                nuevo.Cliente.Email = lblEmail.Text;
 
                 nuevo.Empleado = new Empleado();
                 nuevo.Empleado.Legajo = int.Parse(lblLegajoEmpleado.Text);
@@ -123,7 +125,7 @@ namespace TPC_Caero_Hoffman
 
                 EmailService emailService = new EmailService();
 
-                emailService.correo(txtDetalles.Text);
+                emailService.correo(txtDetalles.Text, nuevo.Cliente.Email);
 
                 try
                 {
